@@ -3,3 +3,17 @@ data/
 
 .ipynb_checkpoints/
 .anaconda/
+
+# Ignore raw and large processed data files
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.zip
+
+# Ignore Python virtual environments and caches
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
