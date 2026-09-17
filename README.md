@@ -54,3 +54,20 @@ Unique Route Corridors found...
 Success! Handoff file 'data/porto_taxi_ml_features.csv' exported.
 Pipeline complete! All tables and features successfully generated.
 ```
+
+## Data Acquisition & Setup
+
+1. **Download the Dataset:**
+   * Create a free account on [Kaggle](https://www.kaggle.com/).
+   * Download the `train.csv.zip` file from the official [ECML/PKDD 2015 Taxi Trajectory Prediction Challenge](https://www.kaggle.com/c/pkdd-15-predict-taxi-service-trajectory-i/data).
+2. **Directory Structure Setup:**
+   * Create a local folder named `data/raw/` in the project root.
+   * Extract `train.csv` into `data/raw/train.csv`.
+3. **Run the Data Pipeline:**
+   * Execute `python data_cleaning.py` to clean spatial telemetry and generate engineered features.
+
+## License & Data Attribution
+
+* **Dataset Source:** ECML/PKDD 2015 - Taxi Service Trajectory Prediction Challenge (Kaggle / UCI Machine Learning Repository).
+* **Usage Rights:** The Porto Taxi Trajectory dataset is used strictly for non-commercial, academic research, and educational development. All rights to the underlying telemetry data belong to the original dataset authors and the University of Porto.
+* **Code License:** The custom pipeline code, spatial engineering scripts, and API backend in this repository are open-sourced under the [MIT License](LICENSE).
